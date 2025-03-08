@@ -1,13 +1,200 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Araújo De Souza - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="shortcut icon" href="https://www.svgrepo.com/show/493626/user-profile-account-person.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="min-h-screen">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>Hi, I'm Miguel Araújo De Souza 😁</h1>
+                <h3>You're wellcome.</h3>
+                <h3>How are you?</h3>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-content">
+                <div class="nav-buttons">
+                    <button class="nav-button active" data-section="about">About me</button>
+                    <button class="nav-button" data-section="skills">Skills</button>
+                    <button class="nav-button" data-section="contact">Contact</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About Section -->
+            <section id="about" class="section active">
+                <div class="card">
+                    <h1 style="color: crimson;">Me</h1>
+                    <br>
+                    <div class="about-content">
+                        <p class="info-item">
+                        I'm <span class="highlight">Back-end Developer and Studdent of Data Analysis<span\>
+                        </p>
+                        <p class="info-item">
+                        Working in <span class="highlight">PicPay</span>
+                        </p>
+                        <p class="info-item">
+                        Ask me about <span class="highlight">Gym and PC</span>
+                        </p>
+                        <p class="info-item">
+                        Currently learning: <span class= "highlight">AI, PowerBI, Machine Learning, NoSQL, Data Science, RPA<span\>
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="card">
+                    <h1 style="color: crimson;">Projects</h1>
+                    <br>
+                    <a href="https://github.com/MiguelAraujoDeSouza/ProbabilityAnalitics">ProbabilityAnalitics</a> : A little project to calculate probability in python for school
+                    <br>
+                    <br>
+                    <a href="https://github.com/MiguelAraujoDeSouza/GueguelasMarket">GueguelasMarket</a> : CRUD in Golang -> Like a little market
+                    <br>
+                    <br>
+                    <a href="https://github.com/MiguelAraujoDeSouza/BiMO">BiMO</a> : A first interdisciplinar/TCC in my school -> Basicly CRUD in Java using Servlet
+                    <br>
+                    <br>
+                    <a href="https://github.com/MiguelAraujoDeSouza/AboutMe">AboutMe</a> : This page ;)
+                </div>
+                <br>
+                <br>
+                <div class="card">
+                    <h1 style="color: crimson;">GitHub Stats</h1>
+                    <br>
+                    <img src="https://github-readme-stats.vercel.app/api?username=miguelaraujodesouza&show_icons=true&hide_border=true&count_private=true&theme=jolly" alt="GitHub Stats">
+                    <br>
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=miguelaraujodesouza&langs_count=10&count_private=true&hide_border=true&theme=jolly&layout=compact" alt="Top Languages">
+
+                </div>
+
+                
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="terminal"></i>
+                            <h3 style="color: crimson;">Back-end</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Go</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="code-2"></i>
+                            <h3 style="color: crimson;">Front-end</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="terminal"></i>
+                            <h3 style="color: crimson;">Frameworks</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Spring Boot (Java)</span>
+                            <span class="skill-tag">Node.js (JS)</span>
+                            <span class="skill-tag">Pandas (Python)</span>
+                            <span class="skill-tag">Express (JS)</span>
+                            <span class="skill-tag">Gin (Golang)</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="database"></i>
+                            <h3 style="color: crimson;">Database</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="cloud"></i>
+                            <h3 style="color: crimson;">DevOps</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Kubernetes</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <i data-lucide="pen-tool"></i>
+                            <h3 style="color: crimson;">Tools</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <div class="card">
+                    <h2 style="color: crimson;">Connect with me</h2>
+                    <div class="social-links">
+                        <a href="https://instagram.com/gueguelas" target="_blank" class="social-link">
+                            <i data-lucide="instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://linkedin.com/in/miguel-araujo-41761b32b/" target="_blank" class="social-link">
+                            <i data-lucide="linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:miguel0araujo0souza@gmail.com" class="social-link">
+                            <i data-lucide="mail"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://github.com/miguelaraujodesouza" target="_blank" class="social-link">
+                            <i data-lucide="github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Miguel Araújo</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
