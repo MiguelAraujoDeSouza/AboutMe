@@ -10,16 +10,16 @@
 </head>
 <body>
     <div class="min-h-screen">
-        <!-- Header -->
+        <!-- Header with Typing Effect -->
         <header class="header">
             <div class="header-content">
-                <h1>Hi, I'm Miguel Araújo De Souza 😁</h1>
-                <h3>You're wellcome.</h3>
+                <h1 id="typing-text">Hi, I'm Miguel Araújo De Souza 😁</h1>
+                <h3 class="typewriter">You're welcome.</h3>
                 <h3>How are you?</h3>
             </div>
         </header>
 
-        <!-- Navigation -->
+        <!-- Navigation with Progress Indicator -->
         <nav class="nav">
             <div class="nav-content">
                 <div class="nav-buttons">
@@ -27,6 +27,7 @@
                     <button class="nav-button" data-section="skills">Skills</button>
                     <button class="nav-button" data-section="contact">Contact</button>
                 </div>
+                <div class="scroll-progress"></div>
             </div>
         </nav>
 
@@ -35,138 +36,170 @@
             <!-- About Section -->
             <section id="about" class="section active">
                 <div class="card">
-                    <h1 style="color: crimson;">Me</h1>
+                    <h1 style="color: crimson;">Me 😎</h1>
                     <br>
                     <div class="about-content">
-                        <p class="info-item">
-                        I'm <span class="highlight">Back-end Developer and Studdent of Data Analysis<span\>
+                        <p class="info-item animate-on-scroll">
+                            I'm <span class="highlight">Back-end Developer and Student of Data Analysis</span>
                         </p>
-                        <p class="info-item">
-                        Working in <span class="highlight">PicPay</span>
+                        <p class="info-item animate-on-scroll">
+                            Working in <span class="highlight">PicPay</span>
                         </p>
-                        <p class="info-item">
-                        Ask me about <span class="highlight">Gym and PC</span>
+                        <p class="info-item animate-on-scroll">
+                            Ask me about <span class="highlight">Gym and PC</span>
                         </p>
-                        <p class="info-item">
-                        Currently learning: <span class= "highlight">AI, PowerBI, Machine Learning, NoSQL, Data Science, RPA<span\>
+                        <p class="info-item animate-on-scroll">
+                            Currently learning: 
+                            <div class="skills-carousel">
+                                <span class="carousel-item">AI</span>
+                                <span class="carousel-item">PowerBI</span>
+                                <span class="carousel-item">Machine Learning</span>
+                                <span class="carousel-item">NoSQL</span>
+                                <span class="carousel-item">Data Science</span>
+                                <span class="carousel-item">RPA</span>
+                            </div>
                         </p>
                     </div>
                 </div>
                 <br>
                 <br>
                 <div class="card">
-                    <h1 style="color: crimson;">Projects</h1>
+                    <h1 style="color: crimson;">Projects 🖊</h1>
                     <br>
-                    <a href="https://github.com/MiguelAraujoDeSouza/ProbabilityAnalitics " target="_blank">ProbabilityAnalitics</a> : A little project to calculate probability in python for school
-                    <br>
-                    <br>
-                    <a href="https://github.com/MiguelAraujoDeSouza/GueguelasMarket"target="_blank">GueguelasMarket</a> : CRUD in Golang -> Like a little market
-                    <br>
-                    <br>
-                    <a href="https://github.com/MiguelAraujoDeSouza/BiMO"target="_blank">BiMO</a> : A first interdisciplinar/TCC in my school -> Basicly CRUD in Java using Servlet
-                    <br>
-                    <br>
-                    <a href="https://github.com/MiguelAraujoDeSouza/AboutMe"target="_blank">AboutMe</a> : This page ;)
+                    <div class="projects-grid">
+                        <a href="https://github.com/MiguelAraujoDeSouza/ProbabilityAnalitics" target="_blank" class="project-link">
+                            <span class="project-title">ProbabilityAnalitics</span>
+                            <span class="project-description">A little project to calculate probability in python for school</span>
+                        </a>
+                        <a href="https://github.com/MiguelAraujoDeSouza/GueguelasMarket" target="_blank" class="project-link">
+                            <span class="project-title">GueguelasMarket</span>
+                            <span class="project-description">CRUD in Golang -> Like a little market</span>
+                        </a>
+                        <a href="https://github.com/MiguelAraujoDeSouza/BiMO" target="_blank" class="project-link">
+                            <span class="project-title">BiMO</span>
+                            <span class="project-description">A first interdisciplinar/TCC in my school -> Basicly CRUD in Java using Servlet</span>
+                        </a>
+                        <a href="https://github.com/MiguelAraujoDeSouza/AboutMe" target="_blank" class="project-link">
+                            <span class="project-title">AboutMe</span>
+                            <span class="project-description">This page ;)</span>
+                        </a>
+                    </div>
                 </div>
                 <br>
                 <br>
                 <div class="card">
                     <h1 style="color: crimson;">GitHub Stats</h1>
                     <br>
-                    <img src="https://github-readme-stats.vercel.app/api?username=miguelaraujodesouza&show_icons=true&hide_border=true&count_private=true&theme=jolly" alt="GitHub Stats">
-                    <br>
-                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=miguelaraujodesouza&langs_count=10&count_private=true&hide_border=true&theme=jolly&layout=compact" alt="Top Languages">
-
+                    <div class="github-stats">
+                        <img src="https://github-readme-stats.vercel.app/api?username=miguelaraujodesouza&show_icons=true&hide_border=true&count_private=true&theme=jolly" alt="GitHub Stats">
+                        <br>
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=miguelaraujodesouza&langs_count=10&count_private=true&hide_border=true&theme=jolly&layout=compact" alt="Top Languages">
+                    </div>
                 </div>
-
-                
             </section>
 
             <!-- Skills Section -->
             <section id="skills" class="section">
                 <div class="skills-grid">
-                    <div class="skill-card">
+                    <div class="skill-card" data-skill="backend">
                         <div class="skill-header">
                             <i data-lucide="terminal"></i>
                             <h3 style="color: crimson;">Back-end</h3>
                         </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">Go</span>
+                            <span class="skill-tag" data-proficiency="90">Python</span>
+                            <span class="skill-tag" data-proficiency="95">Java</span>
+                            <span class="skill-tag" data-proficiency="85">JavaScript</span>
+                            <span class="skill-tag" data-proficiency="80">Go</span>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card" data-skill="frontend">
                         <div class="skill-header">
                             <i data-lucide="code-2"></i>
                             <h3 style="color: crimson;">Front-end</h3>
                         </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
-                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag" data-proficiency="80">HTML5</span>
+                            <span class="skill-tag" data-proficiency="75">CSS3</span>
+                            <span class="skill-tag" data-proficiency="85">JavaScript</span>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card" data-skill="frameworks">
                         <div class="skill-header">
                             <i data-lucide="terminal"></i>
                             <h3 style="color: crimson;">Frameworks</h3>
                         </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">Spring Boot (Java)</span>
-                            <span class="skill-tag">Node.js (JS)</span>
-                            <span class="skill-tag">Pandas (Python)</span>
-                            <span class="skill-tag">Express (JS)</span>
-                            <span class="skill-tag">Gin (Golang)</span>
+                            <span class="skill-tag" data-proficiency="90">Spring Boot (Java)</span>
+                            <span class="skill-tag" data-proficiency="85">Node.js (JS)</span>
+                            <span class="skill-tag" data-proficiency="80">Pandas (Python)</span>
+                            <span class="skill-tag" data-proficiency="85">Express (JS)</span>
+                            <span class="skill-tag" data-proficiency="75">Gin (Golang)</span>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card" data-skill="database">
                         <div class="skill-header">
                             <i data-lucide="database"></i>
                             <h3 style="color: crimson;">Database</h3>
                         </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag" data-proficiency="90">PostgreSQL</span>
+                            <span class="skill-tag" data-proficiency="85">MySQL</span>
+                            <span class="skill-tag" data-proficiency="75">MongoDB</span>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card" data-skill="devops">
                         <div class="skill-header">
                             <i data-lucide="cloud"></i>
                             <h3 style="color: crimson;">DevOps</h3>
                         </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Linux</span>
-                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag" data-proficiency="85">AWS</span>
+                            <span class="skill-tag" data-proficiency="90">Docker</span>
+                            <span class="skill-tag" data-proficiency="95">Git</span>
+                            <span class="skill-tag" data-proficiency="80">Linux</span>
+                            <span class="skill-tag" data-proficiency="75">Kubernetes</span>
                         </div>
                     </div>
 
-                    <div class="skill-card">
+                    <div class="skill-card" data-skill="tools">
                         <div class="skill-header">
                             <i data-lucide="pen-tool"></i>
                             <h3 style="color: crimson;">Tools</h3>
                         </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">Postman</span>
-                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag" data-proficiency="90">Postman</span>
+                            <span class="skill-tag" data-proficiency="75">Figma</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Contact Section -->
+            <!-- Contact Section with Form -->
             <section id="contact" class="section">
                 <div class="card">
-                    <h2 style="color: crimson;">Connect with me</h2>
+                    <h2>Connect with me</h2>
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
                     <div class="social-links">
                         <a href="https://instagram.com/gueguelas" target="_blank" class="social-link">
                             <i data-lucide="instagram"></i>
@@ -191,7 +224,7 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2025 Miguel Araújo</p>
+            <p>&copy; <span id="current-year"></span> Miguel Araújo</p>
         </footer>
     </div>
 
